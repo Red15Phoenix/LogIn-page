@@ -1,0 +1,185 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../image/imageee.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+
+.logo {
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -6px;
+    background-color: #fff;
+    border-radius: 3px;
+    transform: scaleX(0);
+    transition: .5s;
+}
+
+.navigation a:hover:after {
+    transform: scaleX(1);
+}
+
+
+
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background-color: transparent;
+    backdrop-filter: blur(70px);
+    border: .5px solid transparent /* rgba(255, 255, 255, .5); */;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #000;
+    margin: 30px 0px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: large;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    font-size: large;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0px 9px 0px 0px;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0px 20px;
+}
+
+.remember-forgot span input {
+    accent-color: #000;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    color: #000;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login-register button {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #000;
+    font-size: large;
+    font-weight: 200;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.login-register p {
+    text-align: center;
+}
+
+.login-register p a {
+    color: #000 ;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+}
+
+.signature {
+    position: fixed;
+    bottom: 6px;
+    left: 10px;
+    color: transparent;
+    font-size: small;
+    transition: .5s;
+}
+
+.signature:hover {
+    color:#fff;
+}
+
+    
